@@ -8,10 +8,27 @@ environment:
   sdk: ">=2.17.0 <4.0.0"
   flutter: ">=3.0.0"
 
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: stripe_android
+      ios:
+        default_package: stripe_ios
+      web:
+        default_package: stripe_web
+
 dependencies:
   flutter:
     sdk: flutter
   meta: ^1.8.0
+  stripe_android:
+    path: ../stripe_android
+  stripe_ios:
+    path: ../stripe_ios
+  stripe_platform_interface:
+    path: ../stripe_platform_interface
+dependency_overrides:
   stripe_android:
     path: ../stripe_android
   stripe_ios:
