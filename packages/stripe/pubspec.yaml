@@ -37,13 +37,6 @@ dependencies:
       url: https://github.com/artemsorochan/flutter_stripe.git
       path: packages/stripe_platform_interface
       ref: main
-dependency_overrides:
-  stripe_android:
-    path: ../stripe_android
-  stripe_ios:
-    path: ../stripe_ios
-  stripe_platform_interface:
-    path: ../stripe_platform_interface
 dev_dependencies:
   flutter_test:
     sdk: flutter
